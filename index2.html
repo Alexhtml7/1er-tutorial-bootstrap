@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaz</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="/Tuto_Bootstrap/interfaz.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Barra de navegación</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#">Pricing</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <div class="container my-3">
+        <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 py-4 bg-white">
+                <h2>Formulario de lenguaje</h2>
+                <form action="" method="post">
+                    <div class="mb-3">
+                    <label for="nombre" class="form-label">Lenguaje</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Lenguaje" autofocus>
+                  </div>
+                  <div class="mb-3">
+                    <label for="descripcion" class="form-label">Descripción</label>
+                    <textarea class="form-control" id="descripcion" placeholder="Descripción del lenguaje" rows="3"></textarea>
+                  </div>
+                  <div class="mb-3">
+                    <label for="programadores" class="form-label">Número de programadores</label>
+                    <input type="number" class="form-control" id="programadores">
+                  </div>
+                  <div class="d-grid gap-2">
+                    <button class="btn btn-success">Guardar</button>
+                    <button id="btn2" class="btn">Limpiar</button>
+                  </div>                  
+                </form>
+            </div>
+            <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8 py-4 bg-white">
+                <h2>Listado de lenguajes</h2>
+                <table class="table table-striped table-dark">
+                     <!-- <colgroup> 
+                        <col style="background-color: rgb(219, 135, 135);">
+                     </colgroup> --> <!-- para agregar un color a cada columna por separado -->
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Lenguaje</th>
+                            <th>Cantidad de programadores</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- <colgroup> 
+                            <col style="background-color: rgb(70, 67, 67);">
+                        </colgroup>--> 
+                        <tr>
+                            <td>1</td>
+                            <td>JavaScript</td>
+                            <td>21</td>                   
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Python</td>
+                            <td>110</td>                   
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>C#</td>
+                            <td>45</td>                   
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Ruby</td>
+                            <td>31</td>                   
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

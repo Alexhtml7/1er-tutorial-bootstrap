@@ -1,0 +1,25 @@
+#descripcion {
+    resize: none;
+}
+
+
+/* Si uso el class btn o .btn aplicaría para todos los btn, como quiero agregar un borde
+solamente al 2do botón de Limpiar, uso ID o # */
+#btn2 { 
+    border: solid 1px black;
+}
+
+th, td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+body {
+    background: #005AA7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.bg-white {
+    background-color: white;
+}
